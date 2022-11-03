@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: gcr.io/reference-yen-348420/python-app
+          image: mohmadsabri/pythonapp:v1
           ports:
             - containerPort: 8000
           env:
