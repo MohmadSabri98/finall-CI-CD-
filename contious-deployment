@@ -22,7 +22,7 @@ spec:
         mountPath: /var/lib/containers
   volumes:
     - name: varlibcontainers
-      emptyDir:{}
+      emptyDir: {}
 '''   
     }
   }
