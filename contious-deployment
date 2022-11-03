@@ -10,11 +10,18 @@ spec:
   containers:
   - name: sdk
     image:  google/cloud-sdk
+    resources:
+      requests:
+        ephemeral-storage: 2Gi
+      limits:
+        ephemeral-storage: 4Gi    
+    
     command:
     - cat
     tty: true
     securityContext:
       privileged: true
+    
     volumeMounts:
       - name: varlibcontainers
         mountPath: /var/lib/containers
