@@ -10,11 +10,7 @@ spec:
   containers:
   - name: sdk
     image:  google/cloud-sdk
-    resources:
-      requests:
-        ephemeral-storage: "2Gi"
-      limits:
-        ephemeral-storage: "2Gi"
+
     command:
     - cat
     tty: true
