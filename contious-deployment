@@ -12,9 +12,9 @@ spec:
     image:  google/cloud-sdk
     resources:
       requests:
-        ephemeral-storage: "1Gi"
+        ephemeral-storage: "2Gi"
       limits:
-        ephemeral-storage: "1Gi"
+        ephemeral-storage: "2Gi"
     command:
     - cat
     tty: true
